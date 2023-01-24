@@ -168,9 +168,9 @@ header.about{
 header.contact{
     min-height: 100vh;
     padding-top: 7rem;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../assets/images/eiffel1.jpg) center/cover no-repeat;
-    background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/images/eiffel1.jpg) center/cover no-repeat;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/images/eiffel1.jpg) center/cover no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../assets/images/kids4.webp) center/cover no-repeat;
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/images/kids4.webp) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/images/kids4.webp) center/cover no-repeat;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -445,8 +445,6 @@ header.contact{
     display: inline-block;
 }
 
-
-
 /* footer */
 footer{
     background-color: var(--dark);
@@ -544,4 +542,83 @@ footer .site-brand{
 .subscribe-form form input[type = "email"]::placeholder{
     color: #fff;
     opacity: 0.3;
+}
+
+/* ### CONTACT PAGE### */
+/* contact */
+.contact-form .form-control{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #000;
+    display: block;
+    margin: 1.6rem auto;
+}
+.contact-form .btn{
+    display: block;
+    margin: auto;
+}
+.contact-icon{
+    background-color: var(--green);
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 1rem auto;
+    font-size: 2rem;
+}
+.contact-item{
+    text-align: center;
+    margin: 3rem 0;
+}
+.contact-item div span{
+    font-weight: 600;
+    font-family: "Ralway", sans-serif;
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/* ### ABOUT PAGE ### */
+/* the team section */
+#team{
+    background-color: var(--light-grey);
+}
+.test-item{
+    border: 2px solid var(--light-grey);
+    padding: 2rem 1rem;
+    position: relative;
+    background-color: #fff;
+    border-radius: 0.2rem;
+    margin: 2rem 0 14rem 0;
+}
+.test-item::after{
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #fff;
+}
+.test-item-info{
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    text-align: center;
+}
+.test-item-info img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin: 1rem;
+}
+.test-item-info h3{
+    font-size: 1rem;
 }
