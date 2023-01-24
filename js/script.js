@@ -4,6 +4,7 @@ const selectElement = selector => {
     if(element) return element;
     throw new Error(`Something went wrong, make sure that ${selector} exists or is typed correctly.`);
 };
+
 // Nav style on scroll
 const scrollHeader = () => {
     const headerElement = selectElement('#header');
@@ -27,19 +28,19 @@ const toggleMenu = () => {
 
 menuToggleIcon.addEventListener('click', toggleMenu);
 
-// open/close search from pop-up
-const formOpenBtn = selectElement('#search-icon');
-const formCloseBtn = selectElement('#form-close-btn');
-const searchFormContainer = selectElement('#search-form-container');
+// // open/close search from pop-up
+// const formOpenBtn = selectElement('#search-icon');
+// const formCloseBtn = selectElement('#form-close-btn');
+// const searchFormContainer = selectElement('#search-form-container');
 
-formOpenBtn.addEventListener('click', () => searchFormContainer.classList.add('activated'));
+// formOpenBtn.addEventListener('click', () => searchFormContainer.classList.add('activated'));
 
-formCloseBtn.addEventListener('click', () => searchFormContainer.classList.remove('activated'));
+// formCloseBtn.addEventListener('click', () => searchFormContainer.classList.remove('activated'));
 
-// --close the search from pop-up on esc keypress
-window.addEventListener('keyup', event => {
-    if(event.key === 'Escape') searchFormContainer.classList.remove('activated')
-});
+// // --close the search from pop-up on esc keypress
+// window.addEventListener('keyup', event => {
+//     if(event.key === 'Escape') searchFormContainer.classList.remove('activated')
+// });
 
 // switch theme/add to local storage
 const bodyElement = document.body;
