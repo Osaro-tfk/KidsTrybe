@@ -662,7 +662,7 @@ header.places{
     z-index: 2;
     bottom: -100%;
     width: 100%;
-    padding: 2rem;
+    padding: 0.5rem;
     -webkit-transition: var(--trans);
     -o-transition: var(--trans);
     transition: var(--trans);
@@ -690,11 +690,11 @@ header.places{
 }
 .test-item{
     border: 2px solid var(--light-grey);
-    padding: 2rem 1rem;
+    padding: 0.5rem 1rem;
     position: relative;
     background-color: #fff;
     border-radius: 0.2rem;
-    margin: 2rem 0 14rem 0;
+    margin: 2rem 0 17rem 0;
 }
 .test-item::after{
     content: "";
