@@ -1,8 +1,14 @@
 html, body{
     font-family: 'Open Sans', sans-serif;
 }
-h1, h2, h3, h4, h5, h6{
-    font-family: 'Raleway', sans-serif;
+h1, h2, h3, h4, h5, h6, p{
+    font-family: 'Indie Flower', sans-serif;
+}
+.navbar a{
+    font-family: 'Indie Flower', sans-serif;
+}
+footer{
+    font-family: 'Indie Flower', sans-serif;
 }
 a{
     color: var(--dark);
